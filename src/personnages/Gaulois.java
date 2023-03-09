@@ -18,23 +18,22 @@ public class Gaulois {
 		
 	}
 	private String prendreparole() {
-		// TODO Auto-generated method stub
 		return "le gaulois" + nom + ": ";
 	}
 
-	private void name() {
-		
-	}
+
 	public void setEffetPotion(int effetPotion) {
 		this.effetPotion = effetPotion;
 	}
 
-	@Override
+	
 	public String toString() {
 		return "Gaulois [nom=" + nom + ", force=" + force + ", effetPotion=" + effetPotion + "]";
 	}
 
 	public static void main(String[] args) {
-		
+		Gaulois asterix = new Gaulois("Asterix",8);
+		System.out.println(asterix);
 	}
+
 }

@@ -18,7 +18,6 @@ public class Romain {
 	}
 
 	private String prendreParole() {
-		// TODO Auto-generated method stub
 		return "Le romain" + nom + " : ";
 	}
 	
