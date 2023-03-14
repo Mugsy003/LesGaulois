@@ -2,12 +2,11 @@ package personnages;
 
 public class Romain {
 	private String nom;
-	private int force, nb_trophees;
-	private Equipement trophees[] = new Equipement[100];
-	private String texte;
-	private Equipement[] equipements;
+	private int force;
+	private Equipement[] equipements = new Equipement[2];
 	private int nbEquipement;
-	private int effetPotion;
+	
+	
 	
 	public Romain(String nom, int force) {
 		this.nom = nom;
@@ -72,7 +71,7 @@ public class Romain {
 	}
 	
 	private int CalculResistanceEquipement(int forceCoup) {
-		texte = "Ma force est de " + this.force + ", et la force du coup est de " + forceCoup;
+		String texte = "Ma force est de " + this.force + ", et la force du coup est de " + forceCoup;
 		int resistanceEquipement = 0;
 		if (!(nbEquipement == 0)) {
 		texte += "\nMais heureusement, grace à mon équipement sa force est diminué de ";
@@ -111,7 +110,7 @@ public class Romain {
 		}
 	
 	public static void main(String[] args) {
-		Romain romain1 = new Romain("Minus",-6);
+		Romain romain1 = new Romain("Minus",6);
 		System.out.println(romain1);
 	}
 

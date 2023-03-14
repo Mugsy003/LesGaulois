@@ -1,6 +1,5 @@
 package histoire;
 
-import java.util.Iterator;
 
 import personnages.Druide;
 import personnages.Gaulois;
