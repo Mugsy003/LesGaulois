@@ -1,9 +1,10 @@
 package personnages;
 
+
 public class Gaulois {
 	private String nom;
 	private int force;
-	private int nb_trophees;
+	private int nbtrophees;
 	private Equipement[] trophees = new Equipement[100];
 	private int effetPotion =1;
 	
@@ -51,12 +52,11 @@ public class Gaulois {
 	public void frapper(Romain romain) {
 		System.out.println(nom + "envoie un grand coup dans la m�choire de " + romain.getNom());
 		Equipement[] trophees = romain.recevoirCoup((force / 3) * effetPotion);
-		for (int i = 0; trophees != null && !(trophees.length < i); i++,
-		nb_trophees++) {
-		this.trophees[nb_trophees] = trophees[i];
+		for (int i = 0; trophees != null && i < trophees.length; i++, nbtrophees++) {
+		this.trophees[nbtrophees] = trophees[i];
 		}
-		return;
 		}
+
 
 	
 }

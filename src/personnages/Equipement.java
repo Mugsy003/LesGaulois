@@ -9,6 +9,11 @@ public enum Equipement {
     private Equipement(String nom) {
         this.nom = nom;
     }
+	public String toString() {
+		return nom;
+	
+	}
+	
     
   String getNom() {
         return nom;
